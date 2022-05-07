@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JB Site</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="icon.jpg" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="real.html">Réalisation</a></li>
+                <li><a href="#">Qui suis-Je ?</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I Like</span></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum placeat, quos dolorem laudantium iste rem incidunt enim harum molestias labore sapiente aliquid necessitatibus autem dolor deleniti vel culpa. Eaque, eum.</p>
+                <a href="#">View All Products</a>
+                </div>
+                <div class="imgBox">
+                <img src="photo1.svg" class="iso">
+            </div>
+        </div>
+        <ul class="thumb">
+        <li><img src="photo1.PNG" onclick="imgSlider('photo1.svg');changeBgColor('#0062be')"></li>
+        <li><img src="photo2.PNG" onclick="imgSlider('photo2.svg');changeBgColor('#e60c2c')"></li>
+        <li><img src="photo3.PNG" onclick="imgSlider('photo3.svg');changeBgColor('#111111')"></li>
+    </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.iso').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
